@@ -1,0 +1,36 @@
+{
+  "name": "queaso-ng5-withsystemjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "preinstall": "npm run compile",
+    "start": "concurrently \"npm run compile:watch\" \"npm run dev\"",
+    "compile": "tsc --project src/",
+    "compile:watch": "tsc --project src/ --watch"
+  },
+  "keywords": [
+    "npm",
+    "queaso"
+  ],
+  "author": "Ruben Haeck <ruben.haeck@wol.be>",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/animations": "^5.2.9",
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/forms": "^5.2.9",
+    "@angular/http": "^5.2.9",
+    "@angular/platform-browser": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "systemjs": "~0.21.2",
+    "rxjs": "^5.5.8",
+    "zone.js": "^0.8.26"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "lite-server": "~2.3.0"
+  }
+}
